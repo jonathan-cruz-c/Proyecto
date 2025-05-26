@@ -69,7 +69,7 @@ public class ComentarioRepository {
                     ps.setInt(3, idsolicitante);
                     int co = ps.executeUpdate();
                     if (co > 0) {
-                        System.out.println("Comentario actualizado por cliente");
+                        System.out.println("Comentario actualizado");
                     } else {
                         System.out.println("No autorizado. El comentario no te pertenece");
                     }
@@ -120,7 +120,7 @@ public class ComentarioRepository {
                     ps.setInt(2, idsolicitante);
                     int co = ps.executeUpdate();
                     if (co > 0) {
-                        System.out.println("Comentario eliminado por cliente");
+                        System.out.println("Comentario eliminado");
                     } else {
                         System.out.println("No autorizado. El comentario no te pertenece");
                     }

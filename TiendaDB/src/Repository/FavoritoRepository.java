@@ -82,7 +82,7 @@ public class FavoritoRepository {
                         ps.setInt(1, favorito.getProducto_id());
                         ps.setInt(2, favorito.getId());
                         ps.executeUpdate();
-                        System.out.println("Favorito actualizado (cliente)");
+                        System.out.println("Favorito actualizado");
                     } else {
                         System.out.println("No puedes actualizar este favorito");
                     }
@@ -130,7 +130,7 @@ public class FavoritoRepository {
                         ps = connection.prepareStatement(delete);
                         ps.setInt(1, idfavorito);
                         ps.executeUpdate();
-                        System.out.println("Favorito eliminado (cliente)");
+                        System.out.println("Favorito eliminado");
                     } else {
                         System.out.println("No puedes eliminar este favorito");
                     }

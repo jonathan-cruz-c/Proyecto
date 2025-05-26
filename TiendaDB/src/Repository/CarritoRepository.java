@@ -38,7 +38,7 @@ public class CarritoRepository {
                     ps.setInt(1, idsolicitante);
                     ps.setInt(2, productoid);
                     ps.executeUpdate();
-                    System.out.println("Producto agregado al carrito por cliente");
+                    System.out.println("Producto agregado al carrito");
                 }
             } else {
                 System.out.println("Usuario solicitante no encontrado");
@@ -99,7 +99,7 @@ public class CarritoRepository {
                             ps.setInt(2, carrito.getId());
                             int ca = ps.executeUpdate();
                             if (ca > 0) {
-                                System.out.println("Carrito actualizado correctamente por cliente");
+                                System.out.println("Carrito actualizado correctamente");
                             } else {
                                 System.out.println("Carrito no encontrado");
                             }
@@ -157,7 +157,7 @@ public class CarritoRepository {
                     ps.setInt(2, idsolicitante);
                     int ca = ps.executeUpdate();
                     if (ca > 0) {
-                        System.out.println("Carrito eliminado por cliente");
+                        System.out.println("Carrito eliminado");
                     } else {
                         System.out.println("No autorizado. El carrito no pertenece al usuario");
                     }

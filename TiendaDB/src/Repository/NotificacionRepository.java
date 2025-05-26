@@ -106,7 +106,7 @@ public class NotificacionRepository {
                         ps = connection.prepareStatement(delete);
                         ps.setInt(1, idnotificacion);
                         ps.executeUpdate();
-                        System.out.println("Notificación eliminada (cliente).");
+                        System.out.println("Notificación eliminada");
                     } else {
                         System.out.println("No puedes eliminar esta notificación.");
                     }

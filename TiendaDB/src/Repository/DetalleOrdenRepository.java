@@ -49,7 +49,7 @@ public class DetalleOrdenRepository {
                         ps.setInt(2, direccionid);
                         ps.setInt(3, pagoid);
                         ps.executeUpdate();
-                        System.out.println("Detalle de orden insertado por cliente");
+                        System.out.println("Detalle de orden insertado");
                     } else {
                         System.out.println("No autorizado. La orden no pertenece al usuario.");
                     }
