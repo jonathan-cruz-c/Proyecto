@@ -90,6 +90,7 @@ public class PagoController {
             }
         } catch (Exception e) {
             System.out.println("Error en PagoController.consultarPagos: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

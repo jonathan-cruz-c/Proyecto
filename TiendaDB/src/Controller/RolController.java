@@ -20,6 +20,7 @@ public class RolController {
             RolService.insertarRol(rol, idsolicitante);
         } catch (Exception e) {
             System.out.println("Error en RolController.insertarRol: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -70,6 +71,7 @@ public class RolController {
             }
         } catch (Exception e) {
             System.out.println("Error en RolController.consultarRoles: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

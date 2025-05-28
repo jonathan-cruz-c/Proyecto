@@ -43,6 +43,7 @@ public class UsuarioController {
             UsuariosService.insertarUsuario(nuevo, idsolicitante);
         } catch (Exception e) {
             System.out.println("Error en UsuarioController (insertar): " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -58,6 +59,7 @@ public class UsuarioController {
             } else {
                 System.out.print("Ingresa tu id para actualizar : ");
                 idactualizar = sc.nextInt();
+                sc.nextLine();
             }
             System.out.print("Ingresa el nuevo nombre(s): ");
             String nombre = sc.nextLine();
@@ -89,6 +91,7 @@ public class UsuarioController {
             UsuariosService.actualizarUsuario(actualizar, idactualizar, idsolicitante);
         } catch (Exception e) {
             System.out.println("Error en UsuarioController (actualizar): " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -106,6 +109,7 @@ public class UsuarioController {
             UsuariosService.eliminarUsuario(ideliminar, idsolicitante);
         } catch (Exception e) {
             System.out.println("Error en UsuarioController (eliminar): " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -126,6 +130,7 @@ public class UsuarioController {
             }
         } catch (Exception e) {
             System.out.println("Error en UsuarioController (consultar): " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

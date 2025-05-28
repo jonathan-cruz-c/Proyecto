@@ -86,6 +86,7 @@ public class FavoritoController {
             }
         } catch (Exception e) {
             System.out.println("Error en consultarFavoritos: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

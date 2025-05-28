@@ -22,6 +22,7 @@ public class ComentarioController {
             ComentarioService.insertarComentario(productoid, comentario, usuario.getId());
         } catch (Exception e) {
             System.out.println("Error al insertar comentario: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -37,6 +38,7 @@ public class ComentarioController {
             ComentarioService.actualizarComentario(comentarioid, nuevocomentario, usuario.getId());
         } catch (Exception e) {
             System.out.println("Error al actualizar comentario: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -50,6 +52,7 @@ public class ComentarioController {
             ComentarioService.eliminarComentario(comentarioid, usuario.getId());
         } catch (Exception e) {
             System.out.println("Error al eliminar comentario: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -72,6 +75,7 @@ public class ComentarioController {
             }
         } catch (Exception e) {
             System.out.println("Error al consultar comentarios: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

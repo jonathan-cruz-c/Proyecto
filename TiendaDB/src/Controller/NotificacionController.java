@@ -91,6 +91,7 @@ public class NotificacionController {
             }
         } catch (Exception e) {
             System.out.println("Error en solicitarConsulta: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

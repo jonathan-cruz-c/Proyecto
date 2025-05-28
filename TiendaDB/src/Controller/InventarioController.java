@@ -96,6 +96,7 @@ public class InventarioController {
             }
         } catch (Exception e) {
             System.out.println("Error en InventarioController.consultarInventarios: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

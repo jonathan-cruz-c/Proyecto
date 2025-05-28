@@ -20,6 +20,7 @@ public class CategoriaController {
             CategoriaService.insertarCategoria(categoria, idusuario);
         } catch (Exception e) {
             System.out.println("Error al insertar categoría: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -74,6 +75,7 @@ public class CategoriaController {
             }
         } catch (Exception e) {
             System.out.println("Error al consultar categorías: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

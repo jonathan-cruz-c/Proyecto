@@ -58,6 +58,7 @@ public class DetalleOrdenController {
             DetalleOrdenService.actualizarDetalleOrden(detalle, idsolicitante);
         } catch (Exception e) {
             System.out.println("Error en DetalleOrdenController.actualizar: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -94,6 +95,7 @@ public class DetalleOrdenController {
             }
         } catch (Exception e) {
             System.out.println("Error en DetalleOrdenController.consultar: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

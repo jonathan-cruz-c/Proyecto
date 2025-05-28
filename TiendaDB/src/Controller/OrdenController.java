@@ -98,6 +98,7 @@ public class OrdenController {
             }
         } catch (Exception e) {
             System.out.println("Error al consultar órdenes: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

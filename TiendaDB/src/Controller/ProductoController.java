@@ -119,6 +119,7 @@ public class ProductoController {
             }
         } catch (Exception e) {
             System.out.println("Error en ProductoController.consultarProductos: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }

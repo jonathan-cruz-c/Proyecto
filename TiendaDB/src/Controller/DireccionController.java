@@ -30,6 +30,7 @@ public class DireccionController {
             DireccionService.agregarDireccion(nueva, usuario.getId());
         } catch (Exception e) {
             System.out.println("Error en insertarDireccion: " + e.getMessage());
+            sc.nextLine();
         }
     }
 
@@ -98,6 +99,7 @@ public class DireccionController {
             }
         } catch (Exception e) {
             System.out.println("Error en consultarDirecciones: " + e.getMessage());
+            sc.nextLine();
         }
     }
 }
