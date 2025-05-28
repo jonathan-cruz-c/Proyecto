@@ -56,7 +56,10 @@ public class MenuPrincipal {
                             break;
                         case 2:
                             Pantalla.limpiarPantalla();
-                            UsuarioMenu.mostrarMenuUsuario(usuario);
+                            boolean cerrarsesion = UsuarioMenu.mostrarMenuUsuario(usuario);
+                            if (cerrarsesion) {
+                                op=14;
+                            }
                             break;
                         case 3:
                             Pantalla.limpiarPantalla();
@@ -114,7 +117,10 @@ public class MenuPrincipal {
                     switch (op) {
                         case 1:
                             Pantalla.limpiarPantalla();
-                            UsuarioMenu.mostrarMenuUsuario(usuario);
+                            boolean cerrarsesion = UsuarioMenu.mostrarMenuUsuario(usuario);
+                            if (cerrarsesion) {
+                                op=12;
+                            }
                             break;
                         case 2:
                             Pantalla.limpiarPantalla();

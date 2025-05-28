@@ -9,7 +9,7 @@ import Repository.Pantalla;
 public class UsuarioMenu {
     static Scanner sc = new Scanner(System.in);
 
-    public static void mostrarMenuUsuario(Usuario usuarioactual) {
+    public static boolean mostrarMenuUsuario(Usuario usuarioactual) {
         int op = 0;
         do {
             try {
@@ -68,8 +68,8 @@ public class UsuarioMenu {
                         case 2:
                             Pantalla.limpiarPantalla();
                             UsuarioController.eliminarUsuario(usuarioactual.getId());
-                            op = 4; // salir del menú luego de eliminarse
-                            break;
+                            System.out.println("Tu cuenta ha sido eliminada. Regresando al menú principal...");
+                            return true; // Esto cerrará sesión
                         case 3:
                             Pantalla.limpiarPantalla();
                             UsuarioController.consultarUsuarios(usuarioactual.getId());
@@ -89,5 +89,6 @@ public class UsuarioMenu {
                 sc.nextLine();
             }
         } while ((usuarioactual.getRol_id() == 1 && op != 5) || (usuarioactual.getRol_id() != 1 && op != 4));
+        return false; //Si no eliminó la cuenta, se queda en sesión
     }
 }
